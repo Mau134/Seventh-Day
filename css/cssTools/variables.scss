@@ -1,0 +1,63 @@
+$mobi_res: 800px;
+$pad: .5em;
+$nav-icon-size: 20pt;
+$nav-hit-area: 10px;
+$nav-zindex: 3;
+$mat: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+$mat_raise: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+
+
+$colors: (
+    warn: #D2232A,
+    blue: #2E3192,
+    // main colors
+    primary: #2E3192,
+    primary_light: lighten(#2E3192, 40%),
+    primary_dark: darken(#2E3192, 40%),
+    second: white,
+    txt_white: white,
+    second-light: lighten(#2E3192, 40%),
+    second-dark: darken(#2E3192, 40%),
+
+    // for Text
+    txt_primary: #000,
+    txt_second: rgb(83, 71, 71),
+
+    // for buttons
+    btn_primary: #2E3192,
+    btn_second: white,
+
+    // for background
+    bg_primary: #2E3192,
+    bg_second: white,
+
+    // for navbar
+    nav_bg: #2E3192,
+    nav_txt: #fff,
+
+    overlay: #0000008c,
+    faint_bg: #e4e4e4a3,
+    faint_shadow: #00000073,
+    main_item_bg: #fff,
+);
+
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
+$borders_shadows: (
+    thin_shadow: 0 0 5px 0px color(faint_bg),
+    thick_faint_shadow: 0 0 20px 7px color(faint_bg),
+    primary-light: lighten(color(primary), 40%),
+    primary-dark: darken(color(primary), 40%),
+    flat_shadow: $mat,
+    raise_shadow: $mat_raise,
+    thin_border: solid thin #cccccc
+);
+
+
+@function border($border-name) {
+    @return map-get($borders_shadows, $border-name)
+}

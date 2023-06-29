@@ -1,0 +1,107 @@
+@import "./mixin", "./variables";
+// @use 'variables' as *;
+// @use 'mixin' as *;
+
+// for navbar
+%overlay {
+  @include position(fixed, 0, 0, 0, 0);
+  z-index: ($nav-zindex - 1);
+  background: color(overlay);
+  display: none;
+  backdrop-filter: blur(1px);
+  &.is-open {
+    display: block;
+  }
+}
+// end navbar
+
+/* for tables */
+// Standard table
+%standard_table {
+  @include table_def;
+  th {
+    background: color(bg_primary);
+    color: color(second);
+  }
+
+  tr:nth-child(even) {
+    background: color(faint_bg);
+  }
+
+  tr:hover {
+    background: color(primary_light);
+  }
+}
+
+// Mat Design
+%mat_table {
+  @include table_def;
+  tr {
+    border-bottom: border(thin_border);
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 1em;
+  }
+  th {
+    color: #696969e0;
+  }
+  box-shadow: -1px 0px 9px 0px #9f9d9dba;
+  td {
+    font-size: 12pt;
+  }
+
+}
+/* end tables */
+
+/* forms */
+//Standard
+%standard_form {
+  @include form_def;
+  input,
+  textarea {
+    border: border(thin_border);
+  }
+}
+
+// shadowed
+%shadowed_form {
+  @include form_def;
+  input,
+  textarea {
+    box-shadow: inset 0px 0px 2px 0px color(primary);
+    &:focus {
+      box-shadow: 0px 0px 3px 1px color(primary);
+    }
+  }
+}
+
+// mat based
+%mat_form {
+  @include form_def;
+
+  input,
+  textarea {
+    border-bottom: solid thin color(primary);
+  }
+}
+/* End Forms */
+
+// dialogue
+%dialogue {
+  @extend %overlay;
+  @include flexi(row, center);
+  z-index: 99;
+  display: none;
+  .contents {
+    background: white;
+    padding: 1em;
+  }
+}
+
+// dialogue
+%fixedImage {
+  width: 100%;
+  height: 30em;
+}
