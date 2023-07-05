@@ -1,7 +1,7 @@
-@font-face {
-    font-family: "Rocher";
-    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
-}
+// @font-face {
+//     font-family: "Rocher";
+//     src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+// }
 
 @import "./cssTools/mixin.scss", "./cssTools/variables", "./cssTools/common", "./cssTools/animations";
 
@@ -138,7 +138,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans';
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -320,7 +320,7 @@ nav {
     z-index: 2;
 
     h3 {
-        font-family: Rocher;
+        
         font-size: 44pt;
         margin-top: -0.7em;
         margin-bottom: 0;
@@ -428,6 +428,7 @@ section h1 {
                 background-image: url(../images/philippe-collard-_yMg_KyYgks-unsplash.jpg);
             }
         }
+        
     }
 }
 
