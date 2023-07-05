@@ -145,7 +145,7 @@ html {
   }
 }
 body {
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -181,14 +181,17 @@ nav {
   transition: 0.2s;
   z-index: 98;
 }
+
 nav header {
   text-align: center;
   margin-left: 2em;
 }
+
 nav header h1 {
   font-size: 25px;
   margin: 0;
 }
+
 nav header h1 a {
   color: #fff;
   text-decoration: none;
@@ -196,6 +199,7 @@ nav header h1 a {
   transition: color 0.3s;
   border-bottom: 2px solid transparent;
 }
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -207,9 +211,11 @@ nav ul {
   width: 100%;
   z-index: 999;
 }
+
 nav ul li {
   display: inline;
 }
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -217,6 +223,7 @@ nav ul li a {
   transition: color 0.3s;
   border-bottom: 2px solid transparent;
 }
+
 nav ul li a:hover {
   color: #f5cb5c;
   transition-delay: 0.4s;
@@ -241,94 +248,115 @@ nav ul li a:hover {
 .about_us {
   background-image: url(../images/edwin-andrade-6liebVeAfrY-unsplash.jpg);
 }
-.ministries{
+
+.ministries {
   background-image: url(../images/annie-spratt-cVEOh_JJmEE-unsplash.jpg);
 }
-.world_federation{
+
+.world_federation {
   background-image: url(../images/bible.jpg);
 }
+
 .slideshow {
   list-style-type: none;
 }
 
-
 .slideshow,
-.slideshow:after { 
-    top: -16px; 
-		position: fixed;
-    width: 100%;
-    height: 70vh;
-    left: 0px;
-    z-index: 5; 
+.slideshow:after {
+  top: -16px;
+  position: fixed;
+  width: 100%;
+  height: 70vh;
+  left: 0px;
+  z-index: 5;
 }
 
-.slideshow li span { 
-		position: absolute;
-    width: 100%;
-    height: 60vh;
-    top: 0px;
-    left: 0px;
-    color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnimation 30s linear infinite 0s; 
-    overflow: hidden;
-  -webkit-mask-image: -webkit-gradient(linear, left top, 
-    left bottom, (rgba(0,0,0,0)));
+.slideshow li span {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 30s linear infinite 0s;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0));
 }
 
+.slideshow li:nth-child(1) span {
+  background-image: url("../images/antelope.jpg");
+}
 
+.slideshow li:nth-child(2) span {
+  background-image: url("../images/elephant.jpg");
+  animation-delay: 6s;
+}
 
-.slideshow li:nth-child(1) span { 
-    background-image: url("../images/antelope.jpg"); 
+.slideshow li:nth-child(3) span {
+  background-image: url("../images/lion.jpg");
+  animation-delay: 12s;
 }
-.slideshow li:nth-child(2) span { 
-    background-image: url("../images/elephant.jpg");
-    animation-delay: 6s; 
+
+.slideshow li:nth-child(4) span {
+  background-image: url("../images/claudio-guglieri-K2RH1QZdLF4-unsplash.jpg");
+  animation-delay: 18s;
 }
-.slideshow li:nth-child(3) span { 
-    background-image: url("../images/lion.jpg");
-    animation-delay: 12s; 
-}
-.slideshow li:nth-child(4) span { 
-    background-image: url("../images/claudio-guglieri-K2RH1QZdLF4-unsplash.jpg");
-    animation-delay: 18s; 
-}
-.slideshow li:nth-child(5) span { 
+
+.slideshow li:nth-child(5) span {
   background-image: url("../images/girraf.jpg");
-  animation-delay: 24s; 
+  animation-delay: 24s;
 }
-.slideshow li:nth-child(6) span { 
+
+.slideshow li:nth-child(6) span {
   background-image: url("../images/zebra.jpg");
-  animation-delay: 30s; 
+  animation-delay: 30s;
 }
 
-
-
-@keyframes imageAnimation { 
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
-
-@keyframes titleAnimation { 
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
-
 .no-cssanimations .cb-slideshow li span {
-	opacity: 1;
+  opacity: 1;
 }
+
 .hero-img {
   width: 100%;
   height: 100%;
@@ -337,7 +365,7 @@ nav ul li a:hover {
   left: 0;
   z-index: -1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-content {
@@ -382,6 +410,7 @@ nav ul li a:hover {
   width: 100%;
   color: #1b2f33;
 }
+
 @media (max-width: 800px) {
   .row_about_info {
     flex-direction: column;
@@ -396,10 +425,12 @@ nav ul li a:hover {
   margin: 0 auto;
   text-align: center;
 }
+
 .row_about_info .info_about_us h1 {
   font-size: 45px;
   margin-bottom: 10px;
 }
+
 .row_about_info .info_about_us p {
   font-size: 22px;
   text-align: justify;
@@ -419,33 +450,21 @@ nav ul li a:hover {
   position: relative;
   z-index: 2;
 }
+
 .card h3 {
   position: relative;
   right: 50%;
-  transform: translate(50%,-50%);
+  transform: translate(50%, -50%);
   text-transform: uppercase;
-  
   font-size: 3em;
   font-weight: 700;
   color: #f5f5f5;
-  text-shadow: 1px 1px 1px #7e5920,
-      1px 2px 1px #919191,
-      1px 3px 1px #919191,
-      1px 4px 1px #919191,
-      1px 5px 1px #919191,
-      1px 6px 1px #919191,
-      1px 7px 1px #919191,
-      1px 8px 1px #919191,
-      1px 9px 1px #919191,
-      1px 10px 1px #919191,
-  1px 18px 6px rgba(16,16,16,0.4),
-  1px 22px 10px rgba(16,16,16,0.2),
-  1px 25px 35px rgba(16,16,16,0.2),
-  1px 30px 60px rgba(16,16,16,0.4);
+  text-shadow: 1px 1px 1px #7e5920, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
   margin-top: -0.1em;
   margin-bottom: -0.2em;
 }
-.card p{
+
+.card p {
   font-size: 18px;
 }
 
@@ -472,7 +491,7 @@ section {
   font-size: 16px;
   border: 0;
   -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
@@ -499,7 +518,7 @@ section h1 {
   font-size: 36px;
   color: #1b2f33;
   -webkit-text-decoration: underline #7e5920;
-          text-decoration: underline #7e5920;
+  text-decoration: underline #7e5920;
 }
 
 .container {
@@ -508,6 +527,7 @@ section h1 {
   text-align: center;
   margin-top: 3em;
 }
+
 .container .row_cards {
   width: 100%;
   display: flex;
@@ -522,43 +542,48 @@ section h1 {
   background-repeat: no-repeat;
 }
 
-
 @media screen and (max-width: 100px) {
   .container .row_cards .imgcard {
     width: 50%;
   }
 }
-
 @media screen and (max-width: 480px) {
   .container .row_cards .imgcard {
     width: 100%;
   }
 }
-
 .container .row_cards .imgcard:hover img {
   opacity: 0.7;
 }
+
 .container .row_cards .row1:nth-child(1) {
   background-image: url(../images/worship.jpg);
 }
+
 .container .row_cards .row1:nth-child(2) {
   background-image: url(../images/Doctrine.jpeg);
 }
+
 .container .row_cards .row1:nth-child(3) {
   background-image: url(../images/Women.jpg);
 }
+
 .container .row_cards .row1:nth-child(4) {
   background-image: url(../images/history.jpeg);
 }
+
 .container .row_cards .row2:nth-child(1) {
   background-image: url(../images/youth.jpg);
 }
+
 .container .row_cards .row2:nth-child(2) {
   background-image: url(../images/church\ picture.jpeg);
 }
+
 .container .row_cards .row2:nth-child(3) {
   background-image: url(../images/craig-manners-lIMjRtCZDhY-unsplash.jpg);
 }
+
 .container .row_cards .row2:nth-child(4) {
   background-image: url(../images/give.jpg);
 }
@@ -573,7 +598,7 @@ section h1 {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -605,12 +630,14 @@ section h1 {
 .imgcard:hover .img-overlay {
   opacity: 1;
 }
-.activities_doc h1{
+
+.activities_doc h1 {
   text-align: center;
   align-items: center;
   font-size: 24px;
   color: #1b2f33;
 }
+
 .containerr {
   display: flex;
   align-items: center;
@@ -619,16 +646,17 @@ section h1 {
   width: 100%;
   color: #1b2f33;
 }
+
 @media (max-width: 1000px) {
   .containerr {
     flex-direction: column;
   }
 }
-
 .containerr .activities_img {
   display: flex;
   position: relative;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 50%;
   height: 60vh;
   background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
@@ -638,20 +666,24 @@ section h1 {
   margin: 2em 2em 1em 2em;
   flex-wrap: wrap;
 }
+
 .containerr .activities_info {
   display: flex;
   width: 50%;
   text-align: right;
   margin: 1em 2em 2em 1em;
 }
-.activities_doc h1{
+
+.activities_doc h1 {
   font-size: 45px;
 }
+
 .activities_info p {
   text-align: justify;
   color: #1b2f33;
   font-size: 22px;
 }
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -666,12 +698,13 @@ section h1 {
     text-align: left;
   }
 }
-.ministries_doc h1{
+.ministries_doc h1 {
   text-align: center;
   align-items: center;
   font-size: 24px;
   color: #1b2f33;
 }
+
 .containerr {
   display: flex;
   align-items: center;
@@ -680,6 +713,7 @@ section h1 {
   width: 100%;
   color: #1b2f33;
 }
+
 @media (max-width: 1000px) {
   .containerr {
     flex-direction: column;
@@ -688,7 +722,8 @@ section h1 {
 .containerr .ministries_img {
   display: flex;
   position: relative;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 50%;
   height: 60vh;
   background-image: url("../images/youth.jpg");
@@ -698,10 +733,12 @@ section h1 {
   margin: 2em 2em 0 2em;
   flex-wrap: wrap;
 }
+
 .containerr .ministries_img2 {
   display: flex;
   position: relative;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 50%;
   height: 60vh;
   background-image: url("../images/Women.jpg");
@@ -711,10 +748,12 @@ section h1 {
   margin: 2em 2em 0 2em;
   flex-wrap: wrap;
 }
+
 .containerr .ministries_img3 {
   display: flex;
   position: relative;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 50%;
   height: 60vh;
   background-image: url("../images/children.jpg");
@@ -724,20 +763,24 @@ section h1 {
   margin: 2em 2em 1em 2em;
   flex-wrap: wrap;
 }
+
 .containerr .ministries_info {
   display: flex;
   width: 50%;
   text-align: right;
   margin: 1em 2em 2em 1em;
 }
-.ministries_doc h1{
+
+.ministries_doc h1 {
   font-size: 45px;
 }
+
 .ministries_info p {
   text-align: justify;
   color: #1b2f33;
   font-size: 22px;
 }
+
 @media (max-width: 768px) {
   .containerr {
     flex-direction: column;
@@ -757,4 +800,4 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
