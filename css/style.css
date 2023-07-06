@@ -421,7 +421,7 @@ nav ul li a:hover {
   padding: 20px;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 80vh;
   margin: 0 auto;
   text-align: center;
 }
@@ -432,7 +432,7 @@ nav ul li a:hover {
 }
 
 .row_about_info .info_about_us p {
-  font-size: 22px;
+  font-size: 18px;
   text-align: justify;
 }
 
@@ -444,7 +444,7 @@ nav ul li a:hover {
   width: 50vw;
   height: auto;
   margin: 0 auto;
-  margin-top: -5em;
+  margin-top: -4em;
   box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   position: relative;
@@ -460,8 +460,8 @@ nav ul li a:hover {
   font-weight: 700;
   color: #f5f5f5;
   text-shadow: 1px 1px 1px #7e5920, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
-  margin-top: -0.1em;
-  margin-bottom: -0.2em;
+  margin-top: 0.8em;
+  margin-bottom: -0.8em;
 }
 
 .card p {
