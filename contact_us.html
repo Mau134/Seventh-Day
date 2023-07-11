@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Seventh Day Baptists</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    
-</head>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+  </head>
 <body>
+  
+  <nav class="header-nav" id="mynav">
+    <header>
+      <h1>
+        <a href="index.html">
+          Seventh Day Baptists
+      </h1>
+      </a>
+    </header>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="visit_malawi.html">Visit Malawi</a></li>
+      <li><a href="ministries.html">Ministries</a></li>
+      <li><a href="world_federation.html">World Federation</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+    </ul>
+  </nav>
   <div class="row">
     <div class="col-12">
-    <div class="header-nav">
-        <header>
-            <h1>Seventh Day Baptists</h1>
-        </header>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Start Here</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="ministries.html">Ministries</a></li>
-                <li><a href="world_federation.html">World Federation</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
-  </div>
-  </div>
-    <div class="row">
-      <div class="col-12">
-    <div class="hero">
+      <div class="hero contact_us">
+        <!-- <img src="" alt="" class="hero-img"> -->
         <div class="hero-content">
-            <h1>Welcome to <br>
-            Seventh Day Baptists Malawi</h1>
+          <h1>Contact Us</h1>
         </div>
-      </div>  
+      </div>
     </div>
-    </div>      
-    <div class="row">
-      <div class="col-12">
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="content">
+        <h3>Contact Information</h3>
+        <p>Pearson Station,<br>
+           Box 337,<br>
+           Blantyre.<br>
+           <br>
+           <br>
+           Phone: +265 (0) 992 527 923<br>
+           Email: Seventhdaybaptist.cac@gmail.com</p>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="content">
+        <h3>Send us a Message</h3>
+        <form action="send_email.php" method="post">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
     <footer>
         <p>&copy; 2023 My Website. All rights reserved.</p>
     </footer>
   </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

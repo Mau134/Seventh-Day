@@ -242,7 +242,9 @@ nav ul li a:hover {
 }
 
 .index {
-  background-image: url(../images/akira-hojo-_86u_Y0oAaM-unsplash.jpg);
+  background-image: url(../images/church\ \(1\).jpg);
+  background-position: top    ;
+
 }
 
 .about_us {
@@ -257,6 +259,9 @@ nav ul li a:hover {
   background-image: url(../images/bible.jpg);
 }
 
+.contact_us{
+  background-image: url(../images/cross.jpg);
+}
 .slideshow {
   list-style-type: none;
 }
@@ -264,7 +269,7 @@ nav ul li a:hover {
 .slideshow,
 .slideshow:after {
   top: -16px;
-  position: fixed;
+ 
   width: 100%;
   height: 70vh;
   left: 0px;
@@ -421,7 +426,7 @@ nav ul li a:hover {
   padding: 20px;
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   margin: 0 auto;
   text-align: center;
 }
@@ -494,6 +499,8 @@ section {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  position: relative;
+  align-items: center;
 }
 
 .button-89:hover,
@@ -537,19 +544,26 @@ section h1 {
 
 .container .row_cards .imgcard {
   width: 25%;
-  height: 15em;
+  height: 18em;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 978px) {
   .container .row_cards .imgcard {
     width: 50%;
   }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 580px) {
   .container .row_cards .imgcard {
     width: 100%;
+    height: 19em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container .row_cards .imgcard {
+    height: 10em;
   }
 }
 .container .row_cards .imgcard:hover img {
@@ -581,7 +595,7 @@ section h1 {
 }
 
 .container .row_cards .row2:nth-child(3) {
-  background-image: url(../images/craig-manners-lIMjRtCZDhY-unsplash.jpg);
+  background-image: url(../images/antelope.jpg);
 }
 
 .container .row_cards .row2:nth-child(4) {
@@ -646,7 +660,9 @@ section h1 {
   width: 100%;
   color: #1b2f33;
 }
-
+.containerr .button-89{
+  align-items: center;
+}
 @media (max-width: 1000px) {
   .containerr {
     flex-direction: column;
@@ -666,6 +682,22 @@ section h1 {
   margin: 2em 2em 1em 2em;
   flex-wrap: wrap;
 }
+.containerr .activities_img1 {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 100vh;
+  border-radius: 1em;
+  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 2em 2em 1em 2em;
+  flex-wrap: wrap;
+}
+
 
 .containerr .activities_info {
   display: flex;
@@ -676,21 +708,167 @@ section h1 {
 
 .activities_doc h1 {
   font-size: 45px;
+  text-align: center;
+  align-items: center;
+  color: #1b2f33;
+  position: relative;
 }
 
-.activities_info p {
+.activities_info {
+  text-align: justify;
+  align-items: center;
+  color: #1b2f33;
+  font-size: 18px;
+}
+.activities_info p{
+  text-align: justify;
+}
+
+.activities_info h1 {
+  font-size: 24px;
+  color: #1b2f33;
+  margin-bottom: 10px;
+}
+.info_container {
   text-align: justify;
   color: #1b2f33;
-  font-size: 22px;
+  font-size: 18px;
 }
-
+.info_container h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #1b2f33;
+  margin-bottom: 20px;
+}
+.containerr .activities_img2 {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 70vh;
+  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2em 2em 1em 2em;
+  border-radius: 1em;
+  flex-wrap: wrap;
+}
+.containerr .activities_img3 {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 70vh;
+  background-image: url("../images/pots.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  margin: 2em 2em 1em 2em;
+  border-radius: 1em;
+  flex-wrap: wrap;
+}
+.containerr .activities_img4 {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 70vh;
+  background-image: url("../images/bible.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  margin: 2em 2em 1em 2em;
+  border-radius: 1em;
+  flex-wrap: wrap;
+}
+.containerr .activities_img5 {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 70vh;
+  background-image: url("../images/give.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  margin: 2em 2em 1em 2em;
+  border-radius: 1em;
+  flex-wrap: wrap;
+}
+.containerr .activities_img6 {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 70vh;
+  background-image: url("../images/sdbwf-malawi_450_300.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  margin: 2em 2em 1em 2em;
+  border-radius: 1em;
+  flex-wrap: wrap;
+}
+.containerr .activities_img7 {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 70vh;
+  background-image: url("../images/tea\ fields.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2em 2em 1em 2em;
+  border-radius: 1em;
+  flex-wrap: wrap;
+}
+.containerr .activities_img8 {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 70vh;
+  background-image: url("../images/nyika.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2em 2em 1em 2em;
+  border-radius: 1em;
+  flex-wrap: wrap;
+}
+.containerr .activities_img9 {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 70vh;
+  background-image: url("../images/Nyau.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2em 2em 1em 2em;
+  border-radius: 1em;
+  flex-wrap: wrap;
+}
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
+  
   .activities_img {
     width: 100%;
     height: auto;
+    margin: 0;
+  }
+  .activities_img1 {
+    width: 100%;
+    height: 70vh;
     margin: 0;
   }
   .activities_info {
@@ -726,12 +904,12 @@ section h1 {
      object-fit: cover;
   width: 50%;
   height: 60vh;
-  background-image: url("../images/youth.jpg");
+  background-image: url("../images/IMG_8066.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 2em 2em 0 2em;
   flex-wrap: wrap;
+  border-radius: 1em;
 }
 
 .containerr .ministries_img2 {
@@ -744,9 +922,9 @@ section h1 {
   background-image: url("../images/Women.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 2em 2em 0 2em;
   flex-wrap: wrap;
+  border-radius: 1em;
 }
 
 .containerr .ministries_img3 {
@@ -756,12 +934,12 @@ section h1 {
      object-fit: cover;
   width: 50%;
   height: 60vh;
-  background-image: url("../images/children.jpg");
+  background-image: url("../images/ministries.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 2em 2em 1em 2em;
   flex-wrap: wrap;
+  border-radius: 1em;
 }
 
 .containerr .ministries_info {
@@ -801,3 +979,161 @@ footer {
   padding: 10px;
   text-align: center;
 } /*# sourceMappingURL=style.css.map */
+.container .row_cards2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .row_cards2 .imgcard12 {
+  width: 25%;
+  height: 18em;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 978px) {
+  .container .row_cards2 .imgcard12 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container .row_cards2 .imgcard12 {
+    width: 100%;
+    height: 19em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container .row_cards2 .imgcard12 {
+    height: 10em;
+  }
+}
+.container .row_cards2 .imgcard12:hover img {
+  opacity: 0.7;
+}
+
+.container .row_cards2 .row1:nth-child(1) {
+  background-image: url(../images/chawe\ inn.jpeg);
+}
+
+.container .row_cards2 .row1:nth-child(2) {
+  background-image: url(../images/the\ lake.jpg);
+}
+
+.container .row_cards2 .row1:nth-child(3) {
+  background-image: url(../images/parks.jpg);
+}
+
+.container .row_cards2 .row1:nth-child(4) {
+  background-image: url(../images/liwonde\ park.jpg);
+}
+.imgcard12 {
+  position: relative;
+  overflow: hidden;
+  padding: 13px;
+}
+
+.imgcard12 img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.imgcard12:hover img {
+  opacity: 0.7;
+}
+
+.imgcard12 .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.imgcard12:hover .img-overlay {
+  opacity: 1;
+}
+.row_about_info1{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: #1b2f33;
+}
+
+@media (max-width: 800px) {
+  .row_about_info1 {
+    flex-direction: column;
+  }
+}
+.row_about_info1 .info_about_us1 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.row_about_info1 .info_about_us1 h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.row_about_info1 .info_about_us1 p {
+  font-size: 18px;
+  text-align: justify;
+}
+.col-6 {
+  width: 50%;
+}
+.content img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+form input,
+form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+form button {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+.col-6 {
+text-align: left; /* Align text to the left */
+padding: 60px;
+height: auto;
+line-height: 1.6;
+}
