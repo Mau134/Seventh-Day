@@ -184,8 +184,8 @@
         font-size: $nav-icon-size;
         line-height: 1;
         text-align: center;
-        margin-top: -(calc($nav-icon-size / 2));
-        margin-left: -(calc($nav-icon-size / 2));
+        margin-top: -($nav-icon-size / 2);
+        margin-left: -($nav-icon-size / 2);
         color: $textcolor;
       }
       &.is-open {
@@ -207,8 +207,9 @@
     position: static;
     background: $main_bg_color;
     @include mobile {
+      background: #7bb2c2;
       @include size(100%, null);
-      @include position(absolute, 0, 0, null, 0);
+      @include position(absolute, 0, 0, null, .5em);
       margin-top: 3em;
       text-align: center;
       display: none;
