@@ -34,3 +34,12 @@ function showSlide() {
 }
 
 showSlide();
+
+
+function toggleMenu() {
+  var menuToggle = document.getElementById("menu-toggle");
+  var menuItems = document.getElementById("menu-items");
+  menuToggle.classList.toggle("active");
+  menuItems.style.display = (menuItems.style.display === "block") ? "none" : "block";
+}
+

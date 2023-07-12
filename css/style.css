@@ -231,6 +231,7 @@ nav ul li a:hover {
   border-bottom: 2px solid #f5cb5c;
 }
 
+
 .hero {
   position: relative;
   height: 60vh;
@@ -1136,4 +1137,62 @@ text-align: left; /* Align text to the left */
 padding: 60px;
 height: auto;
 line-height: 1.6;
+}
+.slideshoww {
+  list-style-type: none;
+}
+
+.slideshoww,
+.slideshoww:after {
+  display: flex; 
+  position: relative; 
+  top: -16px;
+  width: 50%;
+  height: 70vh;
+  left: 0em;
+  z-index: 0em;
+}
+
+.slideshoww li span {
+  position: absolute;
+  width: 90%;
+  height: 80vh;
+  top: -3.5em;
+  color: transparent;
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 30s linear infinite 0s;
+  overflow: hidden;
+  border-radius: 2em;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0));
+}
+
+.slideshoww li:nth-child(1) span {
+  background-image: url("../images/makapwa1.jpg");
+}
+
+.slideshoww li:nth-child(2) span {
+  background-image: url("../images/makapwa2.jpg");
+  animation-delay: 6s;
+}
+
+.slideshoww li:nth-child(3) span {
+  background-image: url("../images/makapwa3.jpg");
+  animation-delay: 12s;
+}
+.slideshoww li:nth-child(4) span {
+  background-image: url("../images/makapwa4.jpg");
+  animation-delay: 18s;
+}
+
+.slideshoww li:nth-child(5) span {
+  background-image: url("../images/makapwa5.jpg");
+  animation-delay: 24s;
+}
+.slideshoww li:nth-child(5) span {
+  background-image: url("../images/makapwa5.jpg");
+  animation-delay: 30s;
 }
