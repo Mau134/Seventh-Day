@@ -44,3 +44,12 @@
     opacity: 0;
   }
 }
+
+@keyframes opening_nav {
+  from {
+    transform: scale(1, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}

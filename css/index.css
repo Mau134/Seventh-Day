@@ -47,6 +47,14 @@
     opacity: 0;
   }
 }
+@keyframes opening_nav {
+  from {
+    transform: scale(1, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
 nav {
   transition: transform ease-in-out 250ms;
   position: fixed;
@@ -224,4 +232,25 @@ nav .active::before {
 
 .card p {
   font-size: 18px;
+}
+
+.index {
+  background-image: url(../images/mission5.jpg);
+  background-position: bottom;
+}
+
+.about_us {
+  background-image: url(../images/edwin-andrade-6liebVeAfrY-unsplash.jpg);
+}
+
+.ministries {
+  background-image: url(../images/annie-spratt-cVEOh_JJmEE-unsplash.jpg);
+}
+
+.world_federation {
+  background-image: url(../images/bible.jpg);
+}
+
+.contact_us {
+  background-image: url(../images/cross.jpg);
 }/*# sourceMappingURL=index.css.map */

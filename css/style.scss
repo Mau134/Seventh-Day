@@ -1,21 +1,5 @@
 @import "./cssTools/mixin.scss", "./cssTools/variables.scss", "./cssTools/common.scss", "./cssTools/animations.scss";
 
-/* @font-face {
-  font-family: 'Roboto Condensed';
-  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
-} */
-/* for tables */
-/* end tables */
-/* forms */
-/* End Forms */
-@keyframes opening_nav {
-  from {
-    transform: scale(1, 0);
-  }
-  to {
-    transform: scale(1, 1);
-  }
-}
 html {
   scroll-behavior: smooth;
 }
@@ -146,6 +130,7 @@ html {
     width: 100%;
   }
 }
+
 body {
   font-family: "Noto Sans";
   margin: 0;
@@ -191,27 +176,6 @@ body {
   h1 {
     font-size: 55px;
   }
-}
-
-.index {
-  background-image: url(../images/mission5.jpg);
-  background-position: bottom;
-}
-
-.about_us {
-  background-image: url(../images/edwin-andrade-6liebVeAfrY-unsplash.jpg);
-}
-
-.ministries {
-  background-image: url(../images/annie-spratt-cVEOh_JJmEE-unsplash.jpg);
-}
-
-.world_federation {
-  background-image: url(../images/bible.jpg);
-}
-
-.contact_us {
-  background-image: url(../images/cross.jpg);
 }
 
 .slideshow,
@@ -448,45 +412,21 @@ section h1 {
   width: 100%;
   text-align: center;
   margin-top: 3em;
-}
 
-.container .row_cards {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.container .row_cards .imgcard {
-  width: 25%;
-  height: 18em;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media screen and (max-width: 978px) {
-  .container .row_cards .imgcard {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .container .row_cards .imgcard {
-    width: 100%;
-    height: 19em;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .container .row_cards .imgcard {
-    height: 10em;
-  }
-}
-.container .row_cards .imgcard:hover img {
-  opacity: 0.7;
-}
-
-.container {
   .row_cards {
+    @include flexi(null, center, null);
+    flex-wrap: wrap;
+
+    .imgcard {
+      width: calc(100% / 4);
+      height: 18em;
+      background-size: cover;
+      background-repeat: no-repeat;
+      // margin: 0.01em;
+      &:hover img {
+        opacity: 0.7;
+      }
+    }
     .row1:nth-child(1) {
       background-image: url(../images/worship.jpg);
     }
