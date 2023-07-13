@@ -1,7 +1,7 @@
 @import "./cssTools/mixin.scss", "./cssTools/variables.scss", "./cssTools/common.scss", "./cssTools/animations.scss";
 
 html {
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
 
 * {
@@ -540,34 +540,6 @@ section h1 {
 }
 
 .containerr {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  color: #1b2f33;
-
-  .button-89 {
-    align-items: center;
-  }
-
-  .activities_img {
-    display: flex;
-    position: relative;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 50%;
-    height: 60vh;
-    background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 2em 2em 1em 2em;
-    flex-wrap: wrap;
-  }
-}
-
-.containerr {
   @include mobile {
     flex-direction: column;
   }
@@ -716,6 +688,7 @@ section h1 {
   border-radius: 0.4em;
   flex-wrap: wrap;
 }
+
 .containerr .activities_img9 {
   display: flex;
   position: relative;
@@ -759,7 +732,27 @@ section h1 {
 
 .containerr {
   @include flexi(row, space-between, center);
+
   color: #1b2f33;
+
+  .button-89 {
+    align-items: center;
+  }
+
+  .activities_img {
+    display: flex;
+    position: relative;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 50%;
+    height: 60vh;
+    background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 2em 2em 1em 2em;
+    flex-wrap: wrap;
+  }
 
   .ministries_img,
   .ministries_img2,
@@ -819,14 +812,12 @@ section h1 {
   }
 }
 
-
 footer {
   background-color: #1b2f33;
   color: #fff;
   padding: 10px;
   text-align: center;
 } /*# sourceMappingURL=style.css.map */
-
 
 .container .row_cards2 {
   width: 100%;

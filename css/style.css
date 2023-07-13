@@ -54,10 +54,6 @@
     transform: scale(1, 1);
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -556,32 +552,6 @@ section h1 {
   color: #1b2f33;
 }
 
-.containerr {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  color: #1b2f33;
-}
-.containerr .button-89 {
-  align-items: center;
-}
-.containerr .activities_img {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 60vh;
-  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 2em 2em 1em 2em;
-  flex-wrap: wrap;
-}
-
 @media (max-width: 900px) {
   .containerr {
     flex-direction: column;
@@ -786,6 +756,23 @@ section h1 {
   justify-content: space-between;
   width: 100%;
   color: #1b2f33;
+}
+.containerr .button-89 {
+  align-items: center;
+}
+.containerr .activities_img {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 50%;
+  height: 60vh;
+  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 2em 2em 1em 2em;
+  flex-wrap: wrap;
 }
 .containerr .ministries_img,
 .containerr .ministries_img2,
