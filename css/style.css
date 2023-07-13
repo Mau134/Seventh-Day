@@ -564,15 +564,8 @@ section h1 {
   width: 100%;
   color: #1b2f33;
 }
-
 .containerr .button-89 {
   align-items: center;
-}
-
-@media (max-width: 1000px) {
-  .containerr {
-    flex-direction: column;
-  }
 }
 .containerr .activities_img {
   display: flex;
@@ -589,20 +582,10 @@ section h1 {
   flex-wrap: wrap;
 }
 
-.containerr .activities_img1 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 100vh;
-  border-radius: 1em;
-  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 2em 2em 1em 2em;
-  flex-wrap: wrap;
+@media (max-width: 900px) {
+  .containerr {
+    flex-direction: column;
+  }
 }
 
 .containerr .activities_info {
@@ -804,42 +787,8 @@ section h1 {
   width: 100%;
   color: #1b2f33;
 }
-
-@media (max-width: 1000px) {
-  .containerr {
-    flex-direction: column;
-  }
-}
-.containerr .ministries_img {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 60vh;
-  background-image: url("../images/IMG_8066.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 0 2em;
-  flex-wrap: wrap;
-  border-radius: 1em;
-}
-
-.containerr .ministries_img2 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 60vh;
-  background-image: url("../images/Women.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 0 2em;
-  flex-wrap: wrap;
-  border-radius: 1em;
-}
-
+.containerr .ministries_img,
+.containerr .ministries_img2,
 .containerr .ministries_img3 {
   display: flex;
   position: relative;
@@ -847,14 +796,21 @@ section h1 {
   object-fit: cover;
   width: 50%;
   height: 60vh;
-  background-image: url("../images/ministries.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
+  margin: 2em 2em 0 2em;
   flex-wrap: wrap;
   border-radius: 1em;
 }
-
+.containerr .ministries_img {
+  background-image: url("../images/IMG_8066.jpg");
+}
+.containerr .ministries_img2 {
+  background-image: url("../images/Women.jpg");
+}
+.containerr .ministries_img3 {
+  background-image: url("../images/ministries.jpg");
+}
 .containerr .ministries_info {
   display: flex;
   width: 50%;
@@ -873,9 +829,6 @@ section h1 {
 }
 
 @media (max-width: 768px) {
-  .containerr {
-    flex-direction: column;
-  }
   .ministries_img {
     width: 100%;
     height: auto;
@@ -1173,29 +1126,13 @@ form button {
   background-color: #b80000;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .containerr .activities_info {
     flex-direction: column;
     width: 100%;
   }
-}
-@media (max-width: 800px) {
-  .containerr .activities_img7 {
-    flex-direction: column;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (max-width: 800px) {
-  .containerr .activities_img8 {
-    flex-direction: column;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (max-width: 800px) {
+  .containerr .activities_img7,
+  .containerr .activities_img8,
   .containerr .activities_img9 {
     flex-direction: column;
     width: 100%;
