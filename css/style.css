@@ -555,6 +555,31 @@ section h1 {
   color: #1b2f33;
 }
 
+.containerr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #1b2f33;
+}
+.containerr .button-89 {
+  align-items: center;
+}
+.containerr .activities_img {
+  display: flex;
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 50%;
+  height: 60vh;
+  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 2em 2em 1em 2em;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 900px) {
   .containerr {
     flex-direction: column;
@@ -608,6 +633,7 @@ section h1 {
 
 .containerr .activities_img2 {
   display: flex;
+  flex-direction: column;
   position: relative;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1117,6 +1143,10 @@ form button {
     flex-direction: column;
     width: 100%;
   }
+  .containerr .activities_img5,
+  .containerr .activities_img2,
+  .containerr .activities_img5,
+  .containerr .activities_img6,
   .containerr .activities_img7,
   .containerr .activities_img8,
   .containerr .activities_img9 {
