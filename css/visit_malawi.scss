@@ -541,11 +541,7 @@ section h1 {
   color: #1b2f33;
 }
 
-.containerr {
-  @include mobile {
-    flex-direction: column;
-  }
-}
+
 
 .containerr .activities_info {
   display: flex;
@@ -734,6 +730,9 @@ section h1 {
 
 .containerr {
   @include flexi(row, space-between, center);
+  @include mobile {
+    flex-direction: column;
+  }
 
   color: #1b2f33;
 

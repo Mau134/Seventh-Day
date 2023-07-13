@@ -378,11 +378,6 @@ section {
   color: #1b2f33;
 }
 
-.containerr {
-  text-align: center;
-  align-items: center;
-}
-
 .activities_info {
   padding-left: 1em;
   align-items: center;
@@ -553,12 +548,6 @@ section h1 {
   align-items: center;
   font-size: 24px;
   color: #1b2f33;
-}
-
-@media (max-width: 900px) {
-  .containerr {
-    flex-direction: column;
-  }
 }
 
 .containerr .activities_info {
@@ -759,6 +748,11 @@ section h1 {
   justify-content: space-between;
   width: 100%;
   color: #1b2f33;
+}
+@media (max-width: 900px) {
+  .containerr {
+    flex-direction: column;
+  }
 }
 .containerr .button-89 {
   align-items: center;

@@ -449,6 +449,9 @@ section h1 {
 
     .imgcard {
       width: calc(100% / 4);
+      @include mobile {
+        width: calc(100% / 2);
+      }
       height: 18em;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1162,4 +1165,3 @@ form button {
     }
   }
 }
-

@@ -477,6 +477,11 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 900px) {
+  .container .row_cards .imgcard {
+    width: 50%;
+  }
+}
 .container .row_cards .imgcard:hover img {
   opacity: 0.7;
 }
