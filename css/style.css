@@ -311,8 +311,8 @@ nav #nav_items.is-open {
 }
 
 .index {
-  background-image: url(../images/church\ \(1\).jpg);
-  background-position: top;
+  background-image: url(../images/mission5.jpg);
+  background-position: bottom;
 }
 
 .about_us {
@@ -588,6 +588,55 @@ section {
   color: #1b2f33;
 }
 
+.containerr {
+  text-align: center;
+  align-items: center;
+}
+.containerr .activities_info {
+  padding-left: 1em;
+  align-items: center;
+  text-align: center;
+}
+.containerr .activities_info .button-90 {
+  position: absolute;
+  margin-left: 12em;
+  margin-right: 12em;
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #1b2f33;
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(from 90deg at var(--b) var(--b), rgba(0, 0, 0, 0) 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid rgba(0, 0, 0, 0);
+  outline-offset: 0.6em;
+  font-size: 16px;
+  border: 0;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  align-items: center;
+  text-align: center;
+}
+.containerr .activities_info .button-90:hover,
+.containerr .activities_info .button-90:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+.containerr .activities_info .button-90:active {
+  background: var(--color);
+  color: #7e5920;
+  align-items: center;
+}
+.containerr .activities_info .button-90 a {
+  text-decoration: none;
+  color: #1b2f33;
+  align-items: center;
+}
+
 section h1 {
   text-align: center;
   font-size: 36px;
@@ -658,7 +707,7 @@ section h1 {
 }
 
 .container .row_cards .row2:nth-child(2) {
-  background-image: url(../images/church\ picture.jpeg);
+  background-image: url(../images/missio.jpeg);
 }
 
 .container .row_cards .row2:nth-child(3) {
@@ -1240,7 +1289,7 @@ form button {
   width: 100%;
   display: flex;
   position: relative;
-  height: 50em;
+  height: 38em;
   margin-right: 0.5em;
   list-style-type: none;
 }
@@ -1263,25 +1312,53 @@ form button {
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0));
 }
 .slidshow_container .slideshoww li:nth-child(1) span {
-  background-image: url("../images/makapwa1.jpg");
+  background-image: url("../images/mission1.jpg");
 }
 .slidshow_container .slideshoww li:nth-child(2) span {
-  background-image: url("../images/makapwa2.jpg");
+  background-image: url("../images/mission2.jpg");
   animation-delay: 6s;
 }
 .slidshow_container .slideshoww li:nth-child(3) span {
-  background-image: url("../images/makapwa3.jpg");
+  background-image: url("../images/mission3.jpg");
   animation-delay: 12s;
 }
 .slidshow_container .slideshoww li:nth-child(4) span {
-  background-image: url("../images/makapwa4.jpg");
+  background-image: url("../images/mission4.jpg");
   animation-delay: 18s;
 }
 .slidshow_container .slideshoww li:nth-child(5) span {
-  background-image: url("../images/makapwa5.jpg");
+  background-image: url("../images/mission5.jpg");
   animation-delay: 24s;
 }
 .slidshow_container .slideshoww li:nth-child(5) span {
   background-image: url("../images/makapwa5.jpg");
   animation-delay: 30s;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+.testimonial .testimonial-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonial .testimonial-content .testimonial-item {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+.testimonial .testimonial-content .testimonial-item .testimonial-item h4 {
+  margin-bottom: 5px;
+}
+.testimonial .testimonial-content .testimonial-item .testimonial-item span {
+  color: #999;
+}
+.testimonial .testimonial-content .testimonial-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
