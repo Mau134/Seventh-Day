@@ -1,7 +1,14 @@
 @import "./cssTools/mixin.scss", "./cssTools/variables.scss", "./cssTools/common.scss", "./cssTools/animations.scss";
 
 html {
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -131,13 +138,6 @@ html {
   }
 }
 
-body {
-  font-family: "Noto Sans";
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
 .row {
   margin: 0;
   display: flex;
@@ -240,19 +240,21 @@ body {
   opacity: 1;
 }
 
-.info h1 {
-  color: #1b2f33;
-  align-items: center;
-  text-align: center;
-}
+.info {
+  h1 {
+    color: #1b2f33;
+    align-items: center;
+    text-align: center;
+  }
 
-.info p {
-  text-align: center;
-  color: #1b2f33;
-  justify-content: center;
-  padding: 10px;
-  padding-left: 60px;
-  padding-right: 60px;
+  p {
+    text-align: center;
+    color: #1b2f33;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .col-4 {
