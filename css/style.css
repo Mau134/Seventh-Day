@@ -856,7 +856,7 @@ section h1 {
 }
 
 .info_container h1 {
-  text-align: center;
+  text-align: justify;
   font-size: 24px;
   color: #1b2f33;
   margin-bottom: 20px;
@@ -873,7 +873,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -888,7 +888,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -903,7 +903,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -918,7 +918,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -933,7 +933,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -948,7 +948,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -963,7 +963,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -978,7 +978,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -1361,4 +1361,26 @@ form button {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
+}
+
+.activities_docc {
+  padding-bottom: -0.1em;
+}
+
+.activities_docc h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.activities_docc h1:after {
+  width: 3em;
+  height: 0.1em;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 0.5em;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
 }/*# sourceMappingURL=style.css.map */
