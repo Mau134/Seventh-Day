@@ -2,7 +2,7 @@ const nav = document.getElementById('responsive-nav');
 
 window.onscroll = () => {
   if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
-    nav.style.backgroundColor = '#7bb2c2'
+    nav.style.backgroundColor = 'rgb(77 75 75 / 71%)'
   }
   else {
     nav.style.backgroundColor = '#ffffff00'
