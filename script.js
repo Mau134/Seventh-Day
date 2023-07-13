@@ -3,10 +3,16 @@ const nav = document.getElementById('responsive-nav');
 window.onscroll = () => {
   if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
     nav.style.top = '0'
+    nav.style.left = '0'
+    nav.style.right = '0'
+    nav.style.borderRadius = '0'
+    
     // nav.style.backgroundColor = 'rgb(77 75 75 / 71%)'
-  }
-  else {
+  } else {
     nav.style.top = '1em'
+    nav.style.left = '1em'
+    nav.style.right = '1em'
+    nav.style.borderRadius = '.5em'
     // nav.style.backgroundColor = '#ffffff00'
   }
 
