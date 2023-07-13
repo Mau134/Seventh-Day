@@ -559,7 +559,6 @@ section h1 {
 .containerr {
   display: flex;
   align-items: center;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   color: #1b2f33;
@@ -635,6 +634,7 @@ section h1 {
 
 .containerr .activities_img2 {
   display: flex;
+  flex-direction: column;
   position: relative;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1131,6 +1131,10 @@ form button {
     flex-direction: column;
     width: 100%;
   }
+  .containerr .activities_img5,
+  .containerr .activities_img2,
+  .containerr .activities_img5,
+  .containerr .activities_img6,
   .containerr .activities_img7,
   .containerr .activities_img8,
   .containerr .activities_img9 {
