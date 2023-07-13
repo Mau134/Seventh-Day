@@ -347,8 +347,36 @@ section {
 .containerr {
   text-align: center;
   align-items: center;
-  .activities_info {
-    padding-left: 1em;
+}
+.activities_info{
+  padding-left: 1em;
+  align-items: center;
+  text-align: center;
+  
+  .button-90 {
+    position: absolute;
+    margin-left: 12em;
+    margin-right: 12em;
+    --b: 3px; /* border thickness */
+    --s: 0.45em; /* size of the corner */
+    --color: #1b2f33;
+    padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(from 90deg at var(--b) var(--b), rgba(0, 0, 0, 0) 90deg, var(--color) 0) var(--_p)
+      var(--_p) / calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
+    transition:
+      0.3s linear,
+      color 0s,
+      background-color 0s;
+    outline: var(--b) solid rgba(0, 0, 0, 0);
+    outline-offset: 0.6em;
+    font-size: 16px;
+    border: 0;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
     align-items: center;
     text-align: center;
     .button-90 {
@@ -593,7 +621,7 @@ section h1 {
   font-size: 18px;
 }
 .info_container h1 {
-  text-align: center;
+  text-align: justify;
   font-size: 24px;
   color: #1b2f33;
   margin-bottom: 20px;
@@ -609,7 +637,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 .containerr .activities_img3 {
@@ -624,7 +652,7 @@ section h1 {
   background-repeat: no-repeat;
 
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 .containerr .activities_img4 {
@@ -639,7 +667,7 @@ section h1 {
   background-repeat: no-repeat;
 
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 .containerr .activities_img5 {
@@ -654,7 +682,7 @@ section h1 {
   background-repeat: no-repeat;
 
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 .containerr .activities_img6 {
@@ -669,7 +697,7 @@ section h1 {
   background-repeat: no-repeat;
 
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 .containerr .activities_img7 {
@@ -683,7 +711,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 .containerr .activities_img8 {
@@ -697,7 +725,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 .containerr .activities_img9 {
@@ -711,7 +739,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 @media (max-width: 768px) {
@@ -1094,4 +1122,63 @@ form button {
       }
     }
   }
+}.activities_docc{
+  padding-bottom: -0.1em;
+}
+.activities_docc h1{
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+// .activities_docc h1:before {
+//   width: 4em;
+//   height: 5px;
+//   display: block;
+//   content: "";
+//   position: absolute;
+//   bottom: 3px;
+//   left: 50%;
+//   margin-left: -14px;
+//   background-color: #b80000;
+// }
+.activities_docc h1:after {
+  width: 3em;
+  height: 0.1em;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 0.5em;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+.containerr{
+@media (max-width: 800px) {
+    .activities_info {
+      flex-direction: column;
+      width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .activities_img7 {
+      flex-direction: column;
+      width: 100%;
+      object-fit: cover;
+    }
+}
+@media (max-width: 800px) {
+  .activities_img8 {
+    flex-direction: column;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 800px) {
+  .activities_img9 {
+    flex-direction: column;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 }

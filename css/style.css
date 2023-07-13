@@ -383,12 +383,13 @@ section {
   text-align: center;
   align-items: center;
 }
-.containerr .activities_info {
+
+.activities_info {
   padding-left: 1em;
   align-items: center;
   text-align: center;
 }
-.containerr .activities_info .button-90 {
+.activities_info .button-90 {
   position: absolute;
   margin-left: 12em;
   margin-right: 12em;
@@ -411,18 +412,41 @@ section {
   align-items: center;
   text-align: center;
 }
-.containerr .activities_info .button-90:hover,
-.containerr .activities_info .button-90:focus-visible {
+.activities_info .button-90 .button-90 {
+  position: absolute;
+  margin-left: 12em;
+  margin-right: 12em;
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #1b2f33;
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(from 90deg at var(--b) var(--b), rgba(0, 0, 0, 0) 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid rgba(0, 0, 0, 0);
+  outline-offset: 0.6em;
+  font-size: 16px;
+  border: 0;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  align-items: center;
+  text-align: center;
+}
+.activities_info .button-90 .button-90:hover,
+.activities_info .button-90 .button-90:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
   outline-offset: 0.05em;
 }
-.containerr .activities_info .button-90:active {
+.activities_info .button-90 .button-90:active {
   background: var(--color);
   color: #7e5920;
   align-items: center;
 }
-.containerr .activities_info .button-90 a {
+.activities_info .button-90 .button-90 a {
   text-decoration: none;
   color: #1b2f33;
   align-items: center;
@@ -620,7 +644,7 @@ section h1 {
 }
 
 .info_container h1 {
-  text-align: center;
+  text-align: justify;
   font-size: 24px;
   color: #1b2f33;
   margin-bottom: 20px;
@@ -637,7 +661,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -652,7 +676,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -667,7 +691,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -682,7 +706,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -697,7 +721,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -712,7 +736,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -727,7 +751,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -742,7 +766,7 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.4em;
   flex-wrap: wrap;
 }
 
@@ -1125,4 +1149,57 @@ form button {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
+}
+
+.activities_docc {
+  padding-bottom: -0.1em;
+}
+
+.activities_docc h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.activities_docc h1:after {
+  width: 3em;
+  height: 0.1em;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 0.5em;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+
+@media (max-width: 800px) {
+  .containerr .activities_info {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .containerr .activities_img7 {
+    flex-direction: column;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 800px) {
+  .containerr .activities_img8 {
+    flex-direction: column;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 800px) {
+  .containerr .activities_img9 {
+    flex-direction: column;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=style.css.map */
