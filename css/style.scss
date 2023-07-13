@@ -348,11 +348,11 @@ section {
   text-align: center;
   align-items: center;
 }
-.activities_info{
+.activities_info {
   padding-left: 1em;
   align-items: center;
   text-align: center;
-  
+
   .button-90 {
     position: absolute;
     margin-left: 12em;
@@ -546,43 +546,31 @@ section h1 {
   justify-content: space-between;
   width: 100%;
   color: #1b2f33;
+
+  .button-89 {
+    align-items: center;
+  }
+
+  .activities_img {
+    display: flex;
+    position: relative;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 50%;
+    height: 60vh;
+    background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 2em 2em 1em 2em;
+    flex-wrap: wrap;
+  }
 }
-.containerr .button-89 {
-  align-items: center;
-}
+
 @media (max-width: 1000px) {
   .containerr {
     flex-direction: column;
   }
-}
-.containerr .activities_img {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 60vh;
-  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 2em 2em 1em 2em;
-  flex-wrap: wrap;
-}
-.containerr .activities_img1 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 100vh;
-  border-radius: 1em;
-  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 2em 2em 1em 2em;
-  flex-wrap: wrap;
 }
 
 .containerr .activities_info {
@@ -1122,10 +1110,11 @@ form button {
       }
     }
   }
-}.activities_docc{
+}
+.activities_docc {
   padding-bottom: -0.1em;
 }
-.activities_docc h1{
+.activities_docc h1 {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 5px;
@@ -1152,33 +1141,20 @@ form button {
   margin-left: -50px;
   background-color: #b80000;
 }
-.containerr{
-@media (max-width: 800px) {
+
+.containerr {
+  @include mobile {
     .activities_info {
       flex-direction: column;
       width: 100%;
     }
-}
-@media (max-width: 800px) {
-    .activities_img7 {
+
+    .activities_img7,
+    .activities_img8,
+    .activities_img9 {
       flex-direction: column;
       width: 100%;
       object-fit: cover;
     }
-}
-@media (max-width: 800px) {
-  .activities_img8 {
-    flex-direction: column;
-    width: 100%;
-    object-fit: cover;
   }
-}
-@media (max-width: 800px) {
-  .activities_img9 {
-    flex-direction: column;
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
 }
