@@ -346,10 +346,7 @@ section {
   text-decoration: none;
   color: #1b2f33;
 }
-.containerr {
-  text-align: center;
-  align-items: center;
-}
+
 .activities_info {
   padding-left: 1em;
   align-items: center;
@@ -449,9 +446,6 @@ section h1 {
 
     .imgcard {
       width: calc(100% / 4);
-      @include mobile {
-        width: calc(100% / 2);
-      }
       height: 18em;
       background-size: cover;
       background-repeat: no-repeat;
@@ -544,38 +538,6 @@ section h1 {
   color: #1b2f33;
 }
 
-.containerr {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  color: #1b2f33;
-
-  .button-89 {
-    align-items: center;
-  }
-
-  .activities_img {
-    display: flex;
-    position: relative;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 50%;
-    height: 60vh;
-    background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 2em 2em 1em 2em;
-    flex-wrap: wrap;
-  }
-}
-
-.containerr {
-  @include mobile {
-    flex-direction: column;
-  }
-}
 
 .containerr .activities_info {
   display: flex;
@@ -620,7 +582,6 @@ section h1 {
 }
 .containerr .activities_img2 {
   display: flex;
-  flex-direction: column;
   position: relative;
   -o-object-fit: cover;
   object-fit: cover;
@@ -765,6 +726,9 @@ section h1 {
 
 .containerr {
   @include flexi(row, space-between, center);
+  @include mobile {
+    flex-direction: column;
+  }
 
   color: #1b2f33;
 
@@ -1152,10 +1116,7 @@ form button {
       flex-direction: column;
       width: 100%;
     }
-    .activities_img5,
-    .activities_img2,
-    .activities_img5,
-    .activities_img6,
+
     .activities_img7,
     .activities_img8,
     .activities_img9 {

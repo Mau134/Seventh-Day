@@ -477,6 +477,11 @@ section h1 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 900px) {
+  .container .row_cards .imgcard {
+    width: 50%;
+  }
+}
 .container .row_cards .imgcard:hover img {
   opacity: 0.7;
 }
@@ -894,19 +899,15 @@ footer {
 .container .row_cards2 .imgcard12:hover img {
   opacity: 0.7;
 }
-
 .container .row_cards2 .row1:nth-child(1) {
   background-image: url(../images/chawe\ inn.jpeg);
 }
-
 .container .row_cards2 .row1:nth-child(2) {
   background-image: url(../images/the\ lake.jpg);
 }
-
 .container .row_cards2 .row1:nth-child(3) {
   background-image: url(../images/parks.jpg);
 }
-
 .container .row_cards2 .row1:nth-child(4) {
   background-image: url(../images/liwonde\ park.jpg);
 }
