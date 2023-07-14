@@ -1111,18 +1111,30 @@ form button {
 }
 
 .containerr {
+  
   @include mobile {
     .activities_info {
       flex-direction: column;
       width: 100%;
     }
-
+    .activities_img3,
+    .activities_img5,
+    .activities_img6,
+    .activities_img4,
+    .activities_img2,
     .activities_img7,
     .activities_img8,
     .activities_img9 {
       flex-direction: column;
       width: 100%;
       object-fit: cover;
+    }
+  }
+}
+.world_federation {
+  @include mobile {
+    .hero-content h1{
+      font-size: 26px;
     }
   }
 }

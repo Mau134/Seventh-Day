@@ -1131,3 +1131,10 @@ form button {
     }
   }
 }
+.contact_us {
+  @include mobile {
+    .hero-content h1{
+      font-size: 26px;
+    }
+  }
+}

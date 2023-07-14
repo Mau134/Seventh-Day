@@ -478,7 +478,7 @@ section h1 {
     }
 
     .row2:nth-child(2) {
-      background-image: url(../images/missio.jpeg);
+      background-image: url(../images/mission3.jpg);
     }
 
     .row2:nth-child(3) {
@@ -734,7 +734,9 @@ section h1 {
 
 .containerr {
   @include flexi(row, space-between, center);
-
+  @include mobile {
+    flex-direction: column;
+  }
   color: #1b2f33;
 
   .button-89 {
@@ -1117,17 +1119,26 @@ form button {
 
 .containerr {
   @include mobile {
-    .activities_info {
+    .activities_info,.ministries_info {
       flex-direction: column;
       width: 100%;
     }
-
+    .ministries_img,
+    .ministries_img2,
+    .ministries_img3,
     .activities_img7,
     .activities_img8,
     .activities_img9 {
       flex-direction: column;
       width: 100%;
       object-fit: cover;
+    }
+  }
+}
+.ministries {
+  @include mobile {
+    .hero-content h1{
+      font-size: 26px;
     }
   }
 }

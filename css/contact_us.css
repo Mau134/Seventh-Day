@@ -555,7 +555,7 @@ section h1 {
   color: #1b2f33;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .containerr {
     flex-direction: column;
   }
@@ -1002,7 +1002,7 @@ form button {
   justify-content: space-between;
   width: 100%;
 }
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .slidshow_container {
     flex-direction: column;
   }
@@ -1112,7 +1112,7 @@ form button {
   background-color: #b80000;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .containerr .activities_info {
     flex-direction: column;
     width: 100%;
@@ -1124,5 +1124,11 @@ form button {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media (max-width: 912px) {
+  .contact_us .hero-content h1 {
+    font-size: 26px;
   }
 }/*# sourceMappingURL=contact_us.css.map */

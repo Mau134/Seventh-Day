@@ -749,7 +749,7 @@ section h1 {
   width: 100%;
   color: #1b2f33;
 }
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .containerr {
     flex-direction: column;
   }
@@ -996,7 +996,7 @@ form button {
   justify-content: space-between;
   width: 100%;
 }
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .slidshow_container {
     flex-direction: column;
   }
@@ -1106,11 +1106,16 @@ form button {
   background-color: #b80000;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .containerr .activities_info {
     flex-direction: column;
     width: 100%;
   }
+  .containerr .activities_img3,
+  .containerr .activities_img5,
+  .containerr .activities_img6,
+  .containerr .activities_img4,
+  .containerr .activities_img2,
   .containerr .activities_img7,
   .containerr .activities_img8,
   .containerr .activities_img9 {
@@ -1118,5 +1123,11 @@ form button {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media (max-width: 912px) {
+  .world_federation .hero-content h1 {
+    font-size: 26px;
   }
 }/*# sourceMappingURL=world_federation.css.map */
