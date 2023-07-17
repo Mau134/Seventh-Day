@@ -54,21 +54,6 @@
     transform: scale(1, 1);
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Noto Sans";
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 [class*=col-] {
   float: left;
   width: 100%;
@@ -283,12 +268,6 @@ section h1 {
   margin-bottom: 20px;
 }
 
-footer {
-  background-color: #1b2f33;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-} 
 .content img {
   width: 100%;
   height: auto;
@@ -304,7 +283,7 @@ footer {
   justify-content: space-between;
   width: 100%;
 }
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .slidshow_container {
     flex-direction: column;
   }
@@ -374,7 +353,7 @@ footer {
   margin: 1em;
   text-align: center;
 }
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .testimonial .testimonial-item {
     width: 50%;
   }

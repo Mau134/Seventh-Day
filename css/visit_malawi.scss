@@ -1,19 +1,5 @@
 @import "./cssTools/mixin.scss", "./cssTools/variables.scss", "./cssTools/common.scss", "./cssTools/animations.scss";
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Noto Sans";
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
 
 [class*="col-"] {
   float: left;
@@ -747,12 +733,6 @@ section h1 {
   }
 }
 
-footer {
-  background-color: #1b2f33;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-} /*# sourceMappingURL=style.css.map */
 
 .container .row_cards2 {
   width: 100%;

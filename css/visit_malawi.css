@@ -54,21 +54,6 @@
     transform: scale(1, 1);
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Noto Sans";
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 [class*=col-] {
   float: left;
   width: 100%;
@@ -768,12 +753,6 @@ section h1 {
     text-align: left;
   }
 }
-footer {
-  background-color: #1b2f33;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-} 
 .container .row_cards2 {
   width: 100%;
   display: flex;
