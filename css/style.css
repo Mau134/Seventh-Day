@@ -204,28 +204,6 @@ body {
   clear: both;
 }
 
-.hero {
-  position: relative;
-  height: 60vh;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center -20em;
-}
-.hero .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  text-shadow: -1px -1px 0 #414141, 1px -1px 0 #6d6d6d, -1px 1px 0 #6d6d6d, 1px 1px 0 #707070;
-}
-.hero h1 {
-  font-size: 55px;
-}
-
 .slideshow,
 .slideshow:after {
   top: -16px;
@@ -1091,34 +1069,6 @@ form button {
 .slidshow_container .slideshoww li:nth-child(5) span {
   background-image: url("../images/makapwa5.jpg");
   animation-delay: 30s;
-}
-
-.testimonial {
-  background-color: #fff;
-  padding: 50px;
-  text-align: center;
-}
-.testimonial .testimonial-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.testimonial .testimonial-content .testimonial-item {
-  width: 300px;
-  margin: 20px;
-  text-align: center;
-}
-.testimonial .testimonial-content .testimonial-item .testimonial-item h4 {
-  margin-bottom: 5px;
-}
-.testimonial .testimonial-content .testimonial-item .testimonial-item span {
-  color: #999;
-}
-.testimonial .testimonial-content .testimonial-item img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
 }
 
 .activities_docc {

@@ -74,123 +74,6 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 900px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
 .row {
   margin: 0;
   display: flex;
@@ -202,28 +85,6 @@ body {
   content: "";
   display: table;
   clear: both;
-}
-
-.hero {
-  position: relative;
-  height: 60vh;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center -20em;
-}
-.hero .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  text-shadow: -1px -1px 0 #414141, 1px -1px 0 #6d6d6d, -1px 1px 0 #6d6d6d, 1px 1px 0 #707070;
-}
-.hero h1 {
-  font-size: 55px;
 }
 
 .slideshow,
@@ -338,44 +199,6 @@ body {
 }
 section {
   padding: 20px;
-}
-
-.button-89 {
-  --b: 3px; /* border thickness */
-  --s: 0.45em; /* size of the corner */
-  --color: #1b2f33;
-  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background: conic-gradient(from 90deg at var(--b) var(--b), rgba(0, 0, 0, 0) 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
-  transition: 0.3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid rgba(0, 0, 0, 0);
-  outline-offset: 0.6em;
-  font-size: 16px;
-  border: 0;
-  -moz-user-select: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  position: relative;
-  align-items: center;
-}
-
-.button-89:hover,
-.button-89:focus-visible {
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: 0.05em;
-}
-
-.button-89:active {
-  background: var(--color);
-  color: #7e5920;
-}
-
-.button-89 a {
-  text-decoration: none;
-  color: #1b2f33;
 }
 
 .activities_info {
@@ -1054,34 +877,6 @@ form button {
 .slidshow_container .slideshoww li:nth-child(5) span {
   background-image: url("../images/makapwa5.jpg");
   animation-delay: 30s;
-}
-
-.testimonial {
-  background-color: #fff;
-  padding: 50px;
-  text-align: center;
-}
-.testimonial .testimonial-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.testimonial .testimonial-content .testimonial-item {
-  width: 300px;
-  margin: 20px;
-  text-align: center;
-}
-.testimonial .testimonial-content .testimonial-item .testimonial-item h4 {
-  margin-bottom: 5px;
-}
-.testimonial .testimonial-content .testimonial-item .testimonial-item span {
-  color: #999;
-}
-.testimonial .testimonial-content .testimonial-item img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
 }
 
 .activities_docc {

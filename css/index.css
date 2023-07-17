@@ -56,7 +56,8 @@
   }
 }
 nav {
-  transition: transform ease-in-out 250ms;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.3);
+  transition: transform ease-in-out 1000ms;
   position: fixed;
   top: 1em;
   right: 2em;
@@ -210,28 +211,48 @@ nav .active::before {
   height: auto;
   margin: 0 auto;
   margin-top: -4em;
-  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   position: relative;
   z-index: 2;
   margin-bottom: 2em;
 }
-
-.card h3 {
+.card .year {
   position: relative;
   right: 50%;
   transform: translate(50%, -50%);
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 25pt;
   font-weight: 700;
   color: #f5f5f5;
   text-shadow: 1px 1px 1px #7e5920, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 14px 6px rgba(16, 16, 16, 0.4), 1px 2px 10px rgba(16, 16, 16, 0.2), 2px 14px 3px rgba(16, 16, 16, 0.2), 1px 3px 6px rgba(16, 16, 16, 0.4);
-  margin-top: -0.5em;
+  margin-top: 0.5em;
   margin-bottom: -0.8em;
 }
 
 .card p {
   font-size: 18px;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center -20em;
+}
+.hero .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: -1px -1px 0 #414141, 1px -1px 0 #6d6d6d, -1px 1px 0 #6d6d6d, 1px 1px 0 #707070;
+}
+.hero h1 {
+  font-size: 30pt;
 }
 
 .index {
