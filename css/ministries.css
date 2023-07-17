@@ -436,7 +436,7 @@ section h1 {
   background-image: url(../images/youth.jpg);
 }
 .container .row_cards .row2:nth-child(2) {
-  background-image: url(../images/missio.jpeg);
+  background-image: url(../images/mission3.jpg);
 }
 .container .row_cards .row2:nth-child(3) {
   background-image: url(../images/antelope.jpg);
@@ -495,7 +495,7 @@ section h1 {
   color: #1b2f33;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .containerr {
     flex-direction: column;
   }
@@ -699,6 +699,11 @@ section h1 {
   justify-content: space-between;
   width: 100%;
   color: #1b2f33;
+}
+@media (max-width: 912px) {
+  .containerr {
+    flex-direction: column;
+  }
 }
 .containerr .button-89 {
   align-items: center;
@@ -942,7 +947,7 @@ form button {
   justify-content: space-between;
   width: 100%;
 }
-@media (max-width: 900px) {
+@media (max-width: 912px) {
   .slidshow_container {
     flex-direction: column;
   }
@@ -1024,11 +1029,14 @@ form button {
   background-color: #b80000;
 }
 
-@media (max-width: 900px) {
-  .containerr .activities_info {
+@media (max-width: 912px) {
+  .containerr .activities_info, .containerr .ministries_info {
     flex-direction: column;
     width: 100%;
   }
+  .containerr .ministries_img,
+  .containerr .ministries_img2,
+  .containerr .ministries_img3,
   .containerr .activities_img7,
   .containerr .activities_img8,
   .containerr .activities_img9 {
@@ -1036,5 +1044,11 @@ form button {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media (max-width: 912px) {
+  .ministries .hero-content h1 {
+    font-size: 26px;
   }
 }/*# sourceMappingURL=ministries.css.map */

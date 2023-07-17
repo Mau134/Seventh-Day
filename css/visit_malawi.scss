@@ -1034,3 +1034,10 @@ form button {
     }
   }
 }
+.hero-content {
+  @include mobile {
+     h1{
+      font-size: 26px;
+    }
+  }
+}
