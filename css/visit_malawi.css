@@ -59,123 +59,6 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 900px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
 .row {
   margin: 0;
   display: flex;
@@ -525,111 +408,13 @@ section h1 {
   margin-bottom: 20px;
 }
 
-.containerr .activities_img2 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-
-.containerr .activities_img3 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/pots.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-
-.containerr .activities_img4 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/bible.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-
-.containerr .activities_img5 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/give.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-
-.containerr .activities_img6 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/sdbwf-malawi_450_300.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-
-.containerr .activities_img7 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/tea fields.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-
-.containerr .activities_img8 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/nyika.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-
+.containerr .activities_img2,
+.containerr .activities_img3,
+.containerr .activities_img4,
+.containerr .activities_img5,
+.containerr .activities_img6,
+.containerr .activities_img7,
+.containerr .activities_img8,
 .containerr .activities_img9 {
   display: flex;
   position: relative;
@@ -637,12 +422,48 @@ section h1 {
   object-fit: cover;
   width: 50%;
   height: 70vh;
-  background-image: url("../images/Nyau.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 2em 2em 1em 2em;
   border-radius: 0.4em;
   flex-wrap: wrap;
+}
+@media (max-width: 912px) {
+  .containerr .activities_img2,
+  .containerr .activities_img3,
+  .containerr .activities_img4,
+  .containerr .activities_img5,
+  .containerr .activities_img6,
+  .containerr .activities_img7,
+  .containerr .activities_img8,
+  .containerr .activities_img9 {
+    background-size: contain;
+    height: 35vh;
+  }
+}
+.containerr .activities_img2 {
+  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
+}
+.containerr .activities_img3 {
+  background-image: url("../images/pots.jpg");
+}
+.containerr .activities_img4 {
+  background-image: url("../images/bible.jpg");
+}
+.containerr .activities_img5 {
+  background-image: url("../images/give.jpg");
+}
+.containerr .activities_img6 {
+  background-image: url("../images/sdbwf-malawi_450_300.png");
+}
+.containerr .activities_img7 {
+  background-image: url("../images/tea fields.jpg");
+}
+.containerr .activities_img8 {
+  background-image: url("../images/nyika.jpg");
+}
+.containerr .activities_img9 {
+  background-image: url("../images/Nyau.jpg");
 }
 
 @media (max-width: 768px) {

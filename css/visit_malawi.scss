@@ -1,127 +1,8 @@
 @import "./cssTools/mixin.scss", "./cssTools/variables.scss", "./cssTools/common.scss", "./cssTools/animations.scss";
 
-
 [class*="col-"] {
   float: left;
   width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 900px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
 }
 
 .row {
@@ -136,7 +17,6 @@
   display: table;
   clear: both;
 }
-
 
 .slideshow,
 .slideshow:after {
@@ -264,7 +144,6 @@
 section {
   padding: 20px;
 }
-
 
 .containerr {
   text-align: center;
@@ -461,8 +340,6 @@ section h1 {
   color: #1b2f33;
 }
 
-
-
 .containerr .activities_info {
   display: flex;
   width: 50%;
@@ -504,123 +381,60 @@ section h1 {
   color: #1b2f33;
   margin-bottom: 20px;
 }
-.containerr .activities_img2 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-.containerr .activities_img3 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/pots.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+.containerr {
+  .activities_img2,
+  .activities_img3,
+  .activities_img4,
+  .activities_img5,
+  .activities_img6,
+  .activities_img7,
+  .activities_img8,
+  .activities_img9 {
+    display: flex;
+    position: relative;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 50%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2em 2em 1em 2em;
+    border-radius: 0.4em;
+    flex-wrap: wrap;
 
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-.containerr .activities_img4 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/bible.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    @include mobile {
+      background-size: contain;
+      height: 35vh;
+    }
+  }
 
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-.containerr .activities_img5 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/give.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  .activities_img2 {
+    background-image: url("../images/matt-meilner-6cWHTHShryg-unsplash.jpg");
+  }
+  .activities_img3 {
+    background-image: url("../images/pots.jpg");
+  }
+  .activities_img4 {
+    background-image: url("../images/bible.jpg");
+  }
+  .activities_img5 {
+    background-image: url("../images/give.jpg");
+  }
+  .activities_img6 {
+    background-image: url("../images/sdbwf-malawi_450_300.png");
+  }
+  .activities_img7 {
+    background-image: url("../images/tea\ fields.jpg");
+  }
+  .activities_img8 {
+    background-image: url("../images/nyika.jpg");
+  }
 
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-.containerr .activities_img6 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/sdbwf-malawi_450_300.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-.containerr .activities_img7 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/tea\ fields.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
-.containerr .activities_img8 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/nyika.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
+  .activities_img9 {
+    background-image: url("../images/Nyau.jpg");
+  }
 }
 
-.containerr .activities_img9 {
-  display: flex;
-  position: relative;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 70vh;
-  background-image: url("../images/Nyau.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 2em 2em 1em 2em;
-  border-radius: 0.4em;
-  flex-wrap: wrap;
-}
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -732,7 +546,6 @@ section h1 {
     text-align: left;
   }
 }
-
 
 .container .row_cards2 {
   width: 100%;
@@ -1016,7 +829,7 @@ form button {
 }
 .hero-content {
   @include mobile {
-     h1{
+    h1 {
       font-size: 26px;
     }
   }
