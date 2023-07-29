@@ -300,6 +300,12 @@ section h1 {
   margin-right: 0.5em;
   list-style-type: none;
 }
+@media (max-width: 912px) {
+  .slidshow_container .slideshoww {
+    height: 35vh;
+    padding: 0;
+  }
+}
 .slidshow_container .slideshoww li {
   background-color: red;
 }
@@ -317,6 +323,12 @@ section h1 {
   overflow: hidden;
   border-radius: 0.5em;
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0));
+}
+@media (max-width: 912px) {
+  .slidshow_container .slideshoww li span {
+    background-size: contain;
+    width: 100%;
+  }
 }
 .slidshow_container .slideshoww li:nth-child(1) span {
   background-image: url("../images/mission1.jpg");

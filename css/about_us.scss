@@ -1,6 +1,5 @@
 @import "./cssTools/mixin.scss", "./cssTools/variables.scss", "./cssTools/common.scss", "./cssTools/animations.scss";
 
-
 [class*="col-"] {
   float: left;
   width: 100%;
@@ -227,7 +226,6 @@ section h1 {
   margin-bottom: 20px;
 }
 
-
 .content img {
   width: 100%;
   height: auto;
@@ -255,6 +253,12 @@ section h1 {
     height: 38em;
     margin-right: 0.5em;
     list-style-type: none;
+
+    @include mobile {
+      height: 35vh;
+      padding: 0;
+    }
+
     li {
       background-color: red;
 
@@ -272,6 +276,11 @@ section h1 {
         overflow: hidden;
         border-radius: 0.5em;
         -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0));
+
+        @include mobile {
+          background-size: contain;
+          width: 100%;
+        }
       }
 
       &:nth-child(1) span {
